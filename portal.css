@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(175, 94, 120);
+}
+/*menu*/
+nav {
+    display: flex;
+}
+#primary{
+    background-color: rgb(170, 223, 95)
+}
+a{
+    background-color:rgb(76, 158, 131);
+    color: rgb(226, 221, 223);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.background{
+    background-color: #a075b0
+}
+/*Main*/
