@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(128, 180, 211);
+  /*  display: flex; 
+    align-items:center; */
+   
+}
+
+a{
+    text-decoration:none;
+    color: rgb(117, 29, 44)
+}
+
+header{
+    display: flex; 
+    align-items:center; 
+    background-color:rgb(29, 87, 120);
+}
+
+main{
+    text-align: center;
+    display: flex; 
+    align-items:center; 
+    background-color:rgb(153, 108, 161);
+
+}
+
+footer{
+  background-color: #f09f99;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}

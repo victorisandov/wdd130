@@ -1,7 +1,13 @@
 body{
-    background-color:rgb(175, 94, 120);
+    background-color:rgb(208, 122, 149);
+  /*  display: flex; 
+    align-items:center; */
+  
 }
 /*menu*/
+#content{
+    max-width: 1600px;
+}
 nav {
     display: flex;
 }
