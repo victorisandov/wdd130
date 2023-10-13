@@ -1,13 +1,21 @@
+
 body{
     background-color:rgb(128, 180, 211);
-  /*  display: flex; 
-    align-items:center; */
+
    
+}
+
+#content{
+  max-width: 1600px;
 }
 
 a{
     text-decoration:none;
-    color: rgb(117, 29, 44)
+    color: rgb(226, 215, 216)
+}
+
+section img {
+  width: 300px;
 }
 
 header{
@@ -20,8 +28,8 @@ main{
     text-align: center;
     display: flex; 
     align-items:center; 
+    flex-direction:column;
     background-color:rgb(153, 108, 161);
-
 }
 
 footer{
@@ -30,6 +38,15 @@ footer{
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex; 
+  align-items:center; 
+  flex-direction:column;
+}
 
+.social img, .logo{
+  width:80px;
+}
+
+.social{
+  display: flex;
 }
