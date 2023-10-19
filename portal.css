@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 body{
     background-color:rgb(208, 122, 149);
   /*  display: flex; 
     align-items:center; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Dancing Script', 'Verdana', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -59,7 +60,7 @@ nav {
     background-color: #a075b0;
 }
 
-dooter p{
+footer p{
     background-color:rgb(229, 176, 193);
     color:#a075b0;
     width: 100%;
