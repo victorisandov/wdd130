@@ -26,9 +26,14 @@ main section img {
   box-sizing: border-box;
 }
  
+.hero-img{
+  width: 100%;
+}
 
-#hero-msg{
+#hero-msg, .msg{
 text-align: center;
+padding-bottom: 50px;
+
 }
 
 
