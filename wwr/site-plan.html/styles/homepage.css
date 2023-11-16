@@ -1,0 +1,157 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #56683a  ;
+  --secondary-color: #dc9aba;
+  --accent1-color: #396E94;
+  --accent2-color: rgb(238, 137, 231);
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "font-family:'Dancing Script', 'Verdana', sans-serif;";
+  --paragraph-font:'Dancing Script', 'Verdana', sans-serif;;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #56683a ;  /* headlines on a white background */ 
+  --headline-color-on-color: #dc9aba; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #56683a ; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #dc9aba; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #56683a  ;
+  --nav-link-color: #AABD8C ;
+  --nav-background-color: #396E94
+  --nav-hover-link-color: #941050;
+  --nav-hover-background-color: #AABD8C ;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  background-color:rgb(235, 165, 203);
+}
+img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px #282a24;
+  border: 2px solid #c32581;
+  border-style: dotted;
+  border-width: .2cm;
+}
+h1, h2, h3, h4, h5 {
+  font-family: Georgia;
+  color:#0a3e16;
+}
+
+h2 {
+  text-align: center;
+}
+
+.gallery {
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 5px;
+
+}
+.video{
+    border: 2px solid #c32581;
+    border-style: dotted;
+  border-width: .2cm;
+
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color:aliceblue;
+  background-image: conic-gradient(#56683a , #d173a1, #a9c47e);
+  box-shadow: 5px 5px 10px #282a24;
+  border: 2px solid #c32581;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px rgb(234, 158, 213), 0px 0px 10px rgb(234, 158, 213), 0px 0px 10px rgb(234, 158, 213),
+    0px 0px 20px rgb(234, 158, 213);
+  border-style: dotted;
+  border-width: 1cm;
+}
+
+header > h1, header > h2 {
+  color:aliceblue;
+  font-family: 'Lucida Handwriting', cursive;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+h6{
+  font-family: Georgia;
+  color: beige;
+  text-shadow:0px 0px 5px#301f40;
+  padding: 1em;
+  font-size: large;
+  text-size-adjust: 200;
+
+}
+
+
+h3{
+  font-size: 30px;
+  font-weight: 300;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #301f40;
+}
+
+nav {
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+  font-family: var(--heading-font);
+  color:#c32581;
+  background-image: conic-gradient(rgb(45, 87, 53), rgb(173, 205, 226), rgb(219, 175, 203));
+  box-shadow: 5px 5px 10px #282a24;
+  border: 2px solid #c32581;
+  border-style: dotted;
+  border-width: .2cm;
+ 
+
+}
+
+nav a {
+  padding:1em;
+  min-width: 100px;
+  text-decoration: none;
+  padding: 5px;
+  font-family: var(--heading-font);
+  color:#c32581;
+  background-color:beige;
+  text-shadow: 0px 0px 5px #301f40;
+  transition: width 2s, height 2s, transform 2s;
+
+}
+
+nav a:link, nav a:visited { /* buttons */
+  color: var(--nav-link-color);
+  text-align: center;
+  color: #c32581;
+  text-shadow: 0px 0px 5px #301f40;
+  transition: width 2s, height 2s, transform 2s;
+}
+nav a:hover {
+  color:rgb(67, 8, 42);
+  text-align: center;
+}
