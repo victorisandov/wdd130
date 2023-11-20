@@ -1,11 +1,16 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #324319  ;
-  --secondary-color: #d86fa2;
-  --accent1-color: #254c68;
-  --accent2-color: rgb(141, 28, 133);
+  --primary-color: #56683a  ;
+  --secondary-color: #dc9aba;
+  --accent1-color: #396E94;
+  --accent2-color: rgb(238, 137, 231);
 
   /* change the values below to your chosen font(s) */
   --heading-font: "font-family:'Dancing Script', 'Verdana', sans-serif;";
@@ -17,10 +22,10 @@
   --paragraph-color-on-white: #56683a ; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #dc9aba; /* paragraph text on a colored background */ 
   --paragraph-background-color: #56683a  ;
-  --nav-link-color: #2e2154 ;
+  --nav-link-color: #AABD8C ;
   --nav-background-color: #396E94
   --nav-hover-link-color: #941050;
-  --nav-hover-background-color: #2e2154 ;
+  --nav-hover-background-color: #AABD8C ;
 }
 
 
@@ -33,34 +38,56 @@ body {
   font-size: 18px;
   text-align: center;
   background-color:rgb(235, 165, 203);
-  font-family:'Dancing Script';
 }
-
 img {
   display: block;
   margin: 0 auto;
+  box-shadow: 5px 5px 10px #282a24;
+  border: 2px solid #c32581;
+  border-style: dotted;
+  border-width: .2cm;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+h1, h2, h3, h4, h5 {
+  font-family: Georgia;
+  color:#0a3e16;
 }
+
 h2 {
   text-align: center;
 }
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
+
+.gallery {
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 5px;
+
 }
+.video{
+    border: 2px solid #c32581;
+    border-style: dotted;
+  border-width: .2cm;
+
+}
+
 header {
   padding: 1em;
   text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
- 
+  color:aliceblue;
+  background-image: conic-gradient(#56683a , #d173a1, #a9c47e);
+  box-shadow: 5px 5px 10px #282a24;
+  border: 2px solid #c32581;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px rgb(234, 158, 213), 0px 0px 10px rgb(234, 158, 213), 0px 0px 10px rgb(234, 158, 213),
+    0px 0px 20px rgb(234, 158, 213);
+  border-style: dotted;
+  border-width: 1cm;
 }
+
 header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+  color:aliceblue;
+  font-family: 'Lucida Handwriting', cursive;
 }
 
 p {
@@ -68,92 +95,63 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
+
+h6{
+  font-family: Georgia;
+  color: beige;
+  text-shadow:0px 0px 5px#301f40;
+  padding: 1em;
+  font-size: large;
+  text-size-adjust: 200;
+
 }
 
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
 
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+h3{
+  font-size: 30px;
+  font-weight: 300;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #301f40;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    font-family:'Dancing Script'
-    
-}
-
-a:hover{
-    background-color: aquamarine;
-    color: white;
-}
-nav {
-  background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-  display:flex;
-
-}
-nav  {
-  list-style-type: none;
-  display: flex;
+  padding: 1em;
   text-align: center;
+  font-family: var(--heading-font);
+  color:#c32581;
+  background-image: conic-gradient(rgb(45, 87, 53), rgb(173, 205, 226), rgb(219, 175, 203));
+  box-shadow: 5px 5px 10px #282a24;
+  border: 2px solid #c32581;
+  border-style: dotted;
+  border-width: .2cm;
+ 
 
 }
+
 nav a {
   padding:1em;
-  min-width: 120px;
+  min-width: 100px;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
+  font-family: var(--heading-font);
+  color:#c32581;
+  background-color:beige;
+  text-shadow: 0px 0px 5px #301f40;
+  transition: width 2s, height 2s, transform 2s;
 
 }
-nav a:link, nav a:visited {
+
+nav a:link, nav a:visited { /* buttons */
   color: var(--nav-link-color);
+  text-align: center;
+  color: #c32581;
+  text-shadow: 0px 0px 5px #301f40;
+  transition: width 2s, height 2s, transform 2s;
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-
-
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+  color:rgb(67, 8, 42);
+  text-align: center;
 }
