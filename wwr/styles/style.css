@@ -21,10 +21,18 @@ body{
 
 }
 
+.logo{
+  align-items:center; 
+  padding: 15px 30px;
+  margin-top: 50px;
+}
 .center{
   box-shadow: 5px 5px 10px #282a24;
   border: 2px solid #c32581;
   transition: transform .5s;
+  align-items:center; 
+  padding: 15px 30px;
+
 }
 .card-img {
   border: 10px solid #c19cdc;
@@ -62,13 +70,16 @@ main section img {
   grid-template-columns: 1fr 3fr 1fr;
   margin-top: -100px; 
   align-items:center; 
+  text-align: center;
+  padding: 15px;
 }
 
 .hero-img{
   width: 100%;
   align-items:center; 
-
-
+  text-align: center;
+  padding: 15px;
+  font-size: 50px;
 }
 
 #hero-box {
@@ -77,14 +88,25 @@ main section img {
   z-index: -1;
   align-items:center; 
   width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 50px;
 }
            
 #hero-msg h4 {
-  color: white;
+  color: rgb(34, 24, 24);
+  text-align: center;
+  padding: 15px;
+  font-size: 50px;
   grid-column: 2/3;
   grid-row: 1/2;
   margin-top: 100px;
   align-items:center; 
+  box-shadow: 5px 5px 10px #282a24;
+  background-color: #f1b9e4;
+  border: 2px solid #c32581;
+  transition: .5s;
+  
 }
 
 #hero-msg, .msg{
@@ -110,12 +132,23 @@ section img {
 }
 
 header{ 
-    display: grid;
-    align-items:center; 
-    background-color:rgb(29, 87, 120);
+    text-align: center;
+    padding: 15px;
     grid-template-columns: 150px auto;
+    background-color:#5b3a73;
+    box-shadow: 5px 5px 10px #282a24;
+    border: 2px solid #c32581;
+    transition: .5s;
+    
 }
-
+.links{
+  color:#282a24;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px #282a24;
+  background-color: #f1b9e4;
+  border: 2px solid #c32581;
+  transition: .5s;
+}
 
 main{
     text-align: center;
@@ -136,11 +169,18 @@ footer{
 
 .social img, .logo{
   width:80px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 5px 5px 10px #282a24;
+  background-color: #f1b9e4;
+  border: 2px solid #c32581;
+  transition: .5s;
 }
 
 .social{
   display: flex;
 }
+
 
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
@@ -156,16 +196,26 @@ footer{
   }
   #hero {
       margin-top: 0;
+      text-align: center;
+      padding: 15px;
   }
   #hero-msg {
       margin-top: 0;
+      text-align: center;
+      padding: 15px;
   }
   #hero-msg h4 {
       display: none;
+      text-align: center;
+      padding: 15px;
   }
   .home-title {
-      font-size: 25px;
+      font-size: 50px;
       color: #e8f5bf;
+      text-align: center;
+      padding: 15px;
+      background-color:rgb(29, 87, 120);
+      grid-template-columns: 150px auto;
   }
   .rivers-card, .camping-card, .rapids-card { 
       margin: 50px auto;
