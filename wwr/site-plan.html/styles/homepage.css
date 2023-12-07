@@ -23,7 +23,7 @@ Fonts are separated by a | */
   --paragraph-color-on-color: #dc9aba; /* paragraph text on a colored background */ 
   --paragraph-background-color: #56683a  ;
   --nav-link-color: #AABD8C ;
-  --nav-background-color: #396E94
+  --nav-background-color: #396E94;
   --nav-hover-link-color: #941050;
   --nav-hover-background-color: #AABD8C ;
 }
@@ -92,8 +92,8 @@ header > h1, header > h2 {
 }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
+  font-family: Georgia;
+  color: white;
   padding: 1em;
 }
 
